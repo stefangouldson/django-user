@@ -4,10 +4,12 @@
 
 <h1>Registration Page</h1>
 
-<form action="POST">
+<form method="POST">
     {% csrf_token %}
     {{form.as_p}}
-    <button type="submit" class="btn btn-primary">Register</button>
+    <button class="btn btn-primary">Register</button>
 </form>
+
+<!-- {{form.username | add_some_css:"form-control" }} -->
 
 {% endblock %}
